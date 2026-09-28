@@ -1,0 +1,52 @@
+@import "tailwindcss";
+
+@theme {
+  --font-sans: 'Inter', -apple-system, BlinkMacSystemFont, 'Trebuchet MS', Roboto, sans-serif;
+  --font-mono: 'JetBrains Mono', ui-monospace, SFMono-Regular, Menlo, Monaco, Consolas, monospace;
+  --color-tv-card: #f8f9fd;
+  --color-tv-hover: #f0f3fa;
+  --color-tv-border: #e0e3eb;
+  --color-tv-text-primary: #131722;
+  --color-tv-text-secondary: #6a6d78;
+  --color-tv-blue: #2962ff;
+  --color-tv-blue-hover: #1e53e5;
+  --color-tv-green: #089981;
+  --color-tv-red: #f23645;
+}
+
+@layer base {
+  body {
+    font-family: var(--font-sans);
+    color: #131722;
+    background-color: #ffffff;
+    font-feature-settings: "cv02", "cv03", "cv04", "cv11";
+    -webkit-font-smoothing: antialiased;
+  }
+}
+
+.no-scrollbar::-webkit-scrollbar {
+  display: none;
+}
+.no-scrollbar {
+  -ms-overflow-style: none;
+  scrollbar-width: none;
+}
+
+@keyframes flashGreen {
+  0% { background-color: rgba(8, 153, 129, 0.22); }
+  100% { background-color: transparent; }
+}
+
+@keyframes flashRed {
+  0% { background-color: rgba(242, 54, 69, 0.22); }
+  100% { background-color: transparent; }
+}
+
+.animate-flash-green {
+  animation: flashGreen 0.8s ease-out;
+}
+
+.animate-flash-red {
+  animation: flashRed 0.8s ease-out;
+}
+

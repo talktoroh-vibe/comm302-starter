@@ -1,0 +1,6 @@
+{
+  "name": "TradingView Markets Everywhere",
+  "description": "Global financial markets overview featuring real-time indices, stock movers, crypto coins, and currency pairs with interactive charts and technical ratings.",
+  "requestFramePermissions": [],
+  "majorCapabilities": ["MAJOR_CAPABILITY_SERVER_SIDE_GEMINI_API"]
+}
